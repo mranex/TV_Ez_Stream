@@ -1,0 +1,8 @@
+<network-security-config>
+    <!-- Dynamic private LAN endpoints cannot be enumerated here. Endpoint validation,
+         no credential redirects, and per-device auth live in the transport layer. HTTP is not TLS. -->
+    <base-config cleartextTrafficPermitted="true" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain>127.0.0.1</domain>
+    </domain-config>
+</network-security-config>
